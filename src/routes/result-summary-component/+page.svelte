@@ -7,7 +7,7 @@
 
 <div id="parent">
   <div id="left">
-    <h3 id="title" style="color:#ccc5ff;">Your Result</h3>
+    <h3 class="title" style="color:#ccc5ff;">Your Result</h3>
     <div class="circle">
       <h1 style="margin: 0; font-size:50px">76</h1>
       <p style="margin: 0; color:#8a7cff;">of 100</p>
@@ -18,7 +18,7 @@
     </p>
   </div>
   <div id="right">
-    <h3 id="title">Summary</h3>
+    <h3 class="title">Summary</h3>
     <div id="items">
       <div id="reaction">
         <div>
@@ -92,7 +92,7 @@
     padding: 20px;
     max-width: 250px;
   }
-  #title {
+  .title {
     margin: 0;
     margin-bottom: 15px;
   }
