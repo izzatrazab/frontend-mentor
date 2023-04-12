@@ -1,74 +1,79 @@
 <script>
-  import reaction from "../../assets/result-summary-component/icon-reaction.svg";
-  import memory from "../../assets/result-summary-component/icon-memory.svg";
-  import verbal from "../../assets/result-summary-component/icon-verbal.svg";
-  import visual from "../../assets/result-summary-component/icon-visual.svg";
+  import reaction from "$lib/result-summary-component/icon-reaction.svg";
+  import memory from "$lib/result-summary-component/icon-memory.svg";
+  import verbal from "$lib/result-summary-component/icon-verbal.svg";
+  import visual from "$lib/result-summary-component/icon-visual.svg";
 </script>
 
-<div id="parent">
-  <div id="left">
-    <h3 class="title" style="color:#ccc5ff;">Your Result</h3>
-    <div class="circle">
-      <h1 style="margin: 0; font-size:50px">76</h1>
-      <p style="margin: 0; color:#8a7cff;">of 100</p>
+<svelte:head>
+  <title>frontend mentor: result-summary-component</title>
+</svelte:head>
+<body>
+  <div id="parent">
+    <div id="left">
+      <h3 class="title" style="color:#ccc5ff;">Your Result</h3>
+      <div class="circle">
+        <h1 style="margin: 0; font-size:50px">76</h1>
+        <p style="margin: 0; color:#8a7cff;">of 100</p>
+      </div>
+      <h2 style="margin-bottom: 0; padding-bottom:5px">Great</h2>
+      <p style="color:#ccc5ff; margin-top:0;">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
     </div>
-    <h2 style="margin-bottom: 0; padding-bottom:5px">Great</h2>
-    <p style="color:#ccc5ff; margin-top:0;">
-      You scored higher than 65% of the people who have taken these tests.
-    </p>
-  </div>
-  <div id="right">
-    <h3 class="title">Summary</h3>
-    <div id="items">
-      <div id="reaction">
-        <div>
-          <img src={reaction} alt="reaction" />
-          <span>Reaction</span>
+    <div id="right">
+      <h3 class="title">Summary</h3>
+      <div id="items">
+        <div id="reaction">
+          <div>
+            <img src={reaction} alt="reaction" />
+            <span>Reaction</span>
+          </div>
+          <div>
+            <span>80</span>
+            <span>&nbsp/&nbsp;100</span>
+          </div>
         </div>
-        <div>
-          <span>80</span>
-          <span>&nbsp/&nbsp;100</span>
+        <div id="memory">
+          <div>
+            <img src={memory} alt="memory" />
+            <span>Memory</span>
+          </div>
+          <div>
+            <span>92</span>
+            <span>&nbsp/&nbsp;100</span>
+          </div>
         </div>
-      </div>
-      <div id="memory">
-        <div>
-          <img src={memory} alt="memory" />
-          <span>Memory</span>
+        <div id="verbal">
+          <div>
+            <img src={verbal} alt="verbal" />
+            <span>Verbal</span>
+          </div>
+          <div>
+            <span>61</span>
+            <span>&nbsp;/&nbsp;100</span>
+          </div>
         </div>
-        <div>
-          <span>92</span>
-          <span>&nbsp/&nbsp;100</span>
-        </div>
-      </div>
-      <div id="verbal">
-        <div>
-          <img src={verbal} alt="verbal" />
-          <span>Verbal</span>
-        </div>
-        <div>
-          <span>61</span>
-          <span>&nbsp;/&nbsp;100</span>
-        </div>
-      </div>
-      <div id="visual">
-        <div>
-          <img src={visual} alt="visual" />
-          <span>Visual</span>
-        </div>
-        <div>
-          <span>72</span>
-          <span>&nbsp/&nbsp;100</span>
+        <div id="visual">
+          <div>
+            <img src={visual} alt="visual" />
+            <span>Visual</span>
+          </div>
+          <div>
+            <span>72</span>
+            <span>&nbsp/&nbsp;100</span>
+          </div>
         </div>
       </div>
+      <button>Continue</button>
     </div>
-    <button>Continue</button>
   </div>
-</div>
+</body>
 
 <style>
   @font-face {
     font-family: hankengrotesk;
-    src: url(../../assets/result-summary-component/HankenGrotesk-Medium.ttf);
+    src: url(../../lib/result-summary-component/HankenGrotesk-Medium.ttf);
   }
   #parent {
     font-family: hankengrotesk;
