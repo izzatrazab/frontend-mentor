@@ -2,21 +2,19 @@
   <title>My frontendmentor answers</title>
 </svelte:head>
 <main>
-  <div>
-    <h1>My frontendmentor answers</h1>
-    <p>
-      this page is dedicated to showcase my answers for frontendmentor questions
-    </p>
-    <ul>
-      <li>
-        <a href="/result-summary-component">Result Summary Component</a>
-      </li>
-    </ul>
-  </div>
+  <h1>My frontendmentor answers</h1>
+  <p>
+    this page is dedicated to showcase my answers for frontendmentor questions
+  </p>
+  <ul>
+    <li>
+      <a href="/result-summary-component">Result Summary Component</a>
+    </li>
+  </ul>
 </main>
 
 <style>
-  div {
+  main {
     display: flex;
     flex-direction: column;
     justify-content: center;
