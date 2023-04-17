@@ -10,6 +10,9 @@
     <li>
       <a href="/result-summary-component">Result Summary Component</a>
     </li>
+    <li>
+      <a href="/product-preview-card-component-main">Product Preview Card Component Main</a>
+    </li>
   </ul>
 </main>
 
