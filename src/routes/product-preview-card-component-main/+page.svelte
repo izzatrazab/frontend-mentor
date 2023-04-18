@@ -9,11 +9,10 @@
     <link href="https://fonts.cdnfonts.com/css/fraunces" rel="stylesheet" />
 </svelte:head>
 <main>
-    <section class="card">
-        <h1 class="hide">PRODUCT</h1>
+    <div class="card">
         <img src={productImage} class="product-image" alt="" />
         <section class="right">
-            <h2>PERFUME</h2>
+            <h1>PERFUME</h1>
             <p class="name">Gabrielle Essence Eau De Parfum</p>
             <p class="description">
                 A floral, solar and voluptuous interpretation composed by Oliver
@@ -27,14 +26,11 @@
                 Add to Cart
             </button>
         </section>
-    </section>
+    </div>
 </main>
 
 <style>
-    .hide{
-        visibility: hidden;
-    }
-    h2 {
+    h1 {
         color: hsl(228, 12%, 48%);
         font-weight: 500;
         font-size: 14px;
