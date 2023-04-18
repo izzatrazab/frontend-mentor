@@ -1,0 +1,1 @@
+live page: https://fe-mentor.pages.dev/product-preview-card-component-main
