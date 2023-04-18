@@ -10,10 +10,11 @@
 </svelte:head>
 <main>
     <section class="card">
+        <h1 class="hide">PRODUCT</h1>
         <img src={productImage} class="product-image" alt="" />
         <section class="right">
-            <h1>PERFUME</h1>
-            <h2>Gabrielle Essence Eau De Parfum</h2>
+            <h2>PERFUME</h2>
+            <p class="name">Gabrielle Essence Eau De Parfum</p>
             <p class="description">
                 A floral, solar and voluptuous interpretation composed by Oliver
                 Polge, Perfumer-Creator for the House of CHANEL
@@ -30,13 +31,16 @@
 </main>
 
 <style>
-    h1 {
+    .hide{
+        visibility: hidden;
+    }
+    h2 {
         color: hsl(228, 12%, 48%);
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 5px;
     }
-    h2 {
+    .name {
         font-family: "Fraunces", sans-serif;
         font-weight: 700;
         font-size: xx-large;
