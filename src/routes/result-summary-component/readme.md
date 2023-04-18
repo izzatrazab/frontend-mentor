@@ -1,0 +1,1 @@
+live page: https://fe-mentor.pages.dev/result-summary-component
