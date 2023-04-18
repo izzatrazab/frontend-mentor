@@ -1,15 +1,16 @@
 <script>
-    import productImage from "$lib/product-preview-card-component-main/perfume.jpg"
+    import productImage from "$lib/product-preview-card-component-main/perfume.jpg";
 </script>
+
 <svelte:head>
     <title>frontend mentor: product-preview-card-component-main</title>
-    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/fraunces" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/fraunces" rel="stylesheet" />
 </svelte:head>
 <main>
     <section class="card">
-        <img src={productImage} alt="">
-        <section>
+        <img src={productImage} alt="" />
+        <section class="right">
             <h1>PERFUME</h1>
             <h2>Gabrielle Essence Eau De Parfum</h2>
             <p class="description">
@@ -26,22 +27,23 @@
 </main>
 
 <style>
-
     h1 {
         margin: 0;
-        color:  hsl(228, 12%, 48%);
+        color: hsl(228, 12%, 48%);
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 5px;
     }
-    h2{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-family: 'Fraunces', sans-serif;
+    h2 {
+        margin:0;
+        font-family: "Fraunces", sans-serif;
         font-weight: 700;
-        font-size:xx-large;
+        font-size: xx-large;
     }
-    button{
+    p{
+        margin: 0;
+    }
+    button {
         width: 100%;
         background: hsl(158, 36%, 37%);
         border-radius: 10px;
@@ -55,54 +57,57 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Montserrat', sans-serif;
-                                                
-        /* border-style: solid; */
+        font-family: "Montserrat", sans-serif;
     }
     .card {
         background-color: white;
         display: flex;
-        border-radius: 10px;
-        margin: 10px;
-        overflow: hidden;
         flex-wrap: wrap;
-        min-width: 360px;
-
+        border-radius: 10px;
+        margin: 15px;
+        overflow: hidden;
+        max-width: 580px;
     }
-    .card > section {
-        flex: 1;
+    img {
+        flex: 1 1 50%;
+        width: 100%;
+        min-width: 290px;
+        object-fit: cover;
+        object-position: center;
+    }
+    @media (max-width: 609px) {
+       img{
+        max-height: 300px;
+        object-position: 100% 35%;
+       }
+    }
+
+    .right {
         box-sizing: border-box;
         padding: 1.5em;
-        min-height: 320px;
-        /* min-width: 273px; */
-        /* max-width: 250px; */
+        flex: 1 1 50%;
+        min-width: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .card > img {
-        /* flex: 1; */
-        height: 100%;
-        /* object-fit: cover; */
-        /* min-width: 273px; */
-        /* max-width: 250px; */
-    }
-    .description{
+    .description {
         font-size: 14px;
-        color:  hsl(228, 12%, 48%);
+        color: hsl(228, 12%, 48%);
     }
-    .price{
+    .price {
         display: flex;
         align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
-    .discount-price{
-        font-family: 'Fraunces', sans-serif;
+    .discount-price {
+        font-family: "Fraunces", sans-serif;
         font-size: xx-large;
         color: hsl(158, 36%, 37%);
         margin-right: 10px;
     }
-    .real-price{
+    .real-price {
         font-size: 14px;
         text-decoration: line-through;
-        color:  hsl(228, 12%, 48%);
+        color: hsl(228, 12%, 48%);
     }
 </style>
