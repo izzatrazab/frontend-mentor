@@ -22,7 +22,8 @@
                 <span class="discount-price">$149.99</span>
                 <span class="real-price">$169.99</span>
             </p>
-            <button><img src={iconCart} alt="" />
+            <button
+                ><img src={iconCart} alt="" />
                 Add to Cart
             </button>
         </section>
@@ -70,13 +71,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 15px;
     }
     .card {
         background: white;
         display: flex;
         flex-wrap: wrap;
         border-radius: 10px;
-        margin: 15px;
         overflow: hidden;
         max-width: 580px;
     }
@@ -96,19 +97,19 @@
         justify-content: space-between;
         row-gap: 20px;
     }
-     .right > *{
+    .right > * {
         margin: 0;
-     }
+    }
     @media (max-width: 609px) {
+        .card {
+            min-width: 334px;
+        }
         .product-image {
             max-height: 300px;
             object-position: 100% 35%;
         }
-        .right{
-            min-width: 334px;
-        }
     }
-    
+
     .description {
         font-size: 14px;
         color: hsl(228, 12%, 48%);
