@@ -66,7 +66,7 @@
     main {
         font-family: "Montserrat", sans-serif;
         width: 100%;
-        height: 100vh;
+        min-height: 100%;
         background: rgb(243, 235, 228);
         display: flex;
         justify-content: center;
@@ -102,10 +102,10 @@
     }
     @media (max-width: 609px) {
         .card {
-            min-width: 334px;
+            min-width: 300px;
         }
         .product-image {
-            max-height: 300px;
+            max-height: 280px;
             object-position: 100% 35%;
         }
     }
