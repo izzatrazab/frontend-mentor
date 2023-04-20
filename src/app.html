@@ -7,18 +7,26 @@
 	<meta name="viewport" content="width=device-width" />
 	%sveltekit.head%
 	<style>
+		html{
+			height: 100%;
+		}
 		body {
-			min-height: 100vh;
+			min-height: 100%;
 			margin: 0;
 			background: rgb(250, 250, 250);
+			display: flex;
 		}
 
 		#app {
+			flex-grow: 1;
 			box-sizing: border-box;
 			min-height: inherit;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		#app > main {
+			box-sizing: border-box;
 		}
 	</style>
 </head>
