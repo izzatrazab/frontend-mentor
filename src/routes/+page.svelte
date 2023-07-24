@@ -8,10 +8,13 @@
   </p>
   <ul>
     <li>
-      <a href="/result-summary-component">Result Summary Component</a>
+      <a href="/interactive-rating-component-main">Interactive-Rating Component Main</a>
     </li>
     <li>
       <a href="/product-preview-card-component-main">Product Preview Card Component Main</a>
+    </li>
+    <li>
+      <a href="/result-summary-component">Result Summary Component</a>
     </li>
   </ul>
 </main>
