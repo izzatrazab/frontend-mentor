@@ -1,20 +1,12 @@
 <script lang="ts">
-    import { onMount } from "svelte";
     import star from "$lib/interactive-rating-component-main/icon-star.svg";
     import thankyou from "$lib/interactive-rating-component-main/illustration-thank-you.svg";
+    
     let sent: boolean = false;
     let rating: number = 0;
-    let ratings: NodeListOf<HTMLInputElement>;
-
-    onMount(async () => {
-        ratings = document.getElementsByName(
-            "rating"
-        ) as NodeListOf<HTMLInputElement>;
-    });
 
     function clickRadio(index: number) {
         rating = index + 1;
-        console.log(rating);
     }
 
     async function submitRating() {
@@ -92,11 +84,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
         height: 100%;
         width: 100%;
-        box-sizing: border-box;
-        background-color: rgb(20, 21, 25);
         padding: 20px;
+        background-color: rgb(20, 21, 25);
     }
     .card {
         display: flex;
@@ -105,8 +97,8 @@
         max-width: 360px;
         width: 100%;
         aspect-ratio: 1;
-        border-radius: 6%;
         padding: 35px;
+        border-radius: 6%;
         font-family: sans-serif;
         color: white;
         background-color: rgb(31, 38, 48);
@@ -116,59 +108,58 @@
         text-align: center;
     }
     p {
-        color: rgb(117, 124, 134);
         line-height: 1.6rem;
+        color: rgb(117, 124, 134);
     }
     #star {
-        background-color: rgba(128, 128, 128, 0.3);
-        aspect-ratio: 1;
-        border-radius: 50%;
         width: 16px;
+        aspect-ratio: 1;
         padding: 15px;
+        border-radius: 50%;
+        background-color: rgba(128, 128, 128, 0.3);
     }
     #rating {
         display: flex;
-        padding-block: 10px;
         justify-content: space-between;
+        padding-block: 10px;
         margin-bottom: 16px;
     }
     .radio {
-        border-radius: 50%;
-        border: none;
         width: 3rem;
         aspect-ratio: 1;
+        border-radius: 50%;
+        border: none;
         background-color: rgb(38, 47, 56);
         color: aliceblue;
     }
     .radio:hover {
-        background-color: rgb(251, 119, 21);
         cursor: pointer;
+        background-color: rgb(251, 119, 21);
     }
     #submit {
         width: 100%;
         padding: 13px;
         border-radius: 50px;
+        border: none;
+        letter-spacing: 2px;
+        font-weight: bold;
         background-color: rgb(251, 119, 21);
         color: aliceblue;
-        font-weight: bold;
-        letter-spacing: 2px;
-        border: none;
     }
     #submit:hover {
         background-color: aliceblue;
         color: rgb(251, 119, 21);
     }
     #rated-image {
-        margin-bottom: 30px;
         width: 50%;
+        margin-bottom: 30px;
     }
     span {
-        background-color: rgb(44,50,58);
-        color: rgb(251, 119, 21);
         padding: 8px 20px 8px 20px;
         border-radius: 50px;
+        background-color: rgb(44,50,58);
+        color: rgb(251, 119, 21);
     }
-
     .clicked {
         background-color: rgb(124, 136, 152) !important;
     }
